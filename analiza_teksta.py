@@ -18,7 +18,7 @@ def set_background(url):
      )
 
 # Pozovi funkciju s linkom na sliku (mora biti direktan link na .jpg ili .png)
-set_background('https://raw.githubusercontent.com/filipvz/Analaizator-emocija/refs/heads/main/analiza_teksta.py')
+set_background('assets/Gemini_Generated_Image_vw0hr7vw0hr7vw0h.png')
 
 st.set_page_config(page_title="Analizator teksta")
 
@@ -86,6 +86,7 @@ if st.button("Analiziraj unešeni tekst"):
 
     else:
         st.warning("Upišite neki tekst")
+
 
 
 
