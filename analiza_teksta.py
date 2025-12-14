@@ -3,6 +3,23 @@ import streamlit as st
 from textblob import TextBlob
 from deep_translator import GoogleTranslator
 
+def set_background(url):
+    st.markdown(
+         f"""
+         <style>
+         .stApp {{
+             background-image: url("{url}");
+             background-attachment: fixed;
+             background-size: cover;
+         }}
+         </style>
+         """,
+         unsafe_allow_html=True
+     )
+
+# Pozovi funkciju s linkom na sliku (mora biti direktan link na .jpg ili .png)
+set_background('')
+
 st.set_page_config(page_title="Analizator teksta")
 
 st.title("Analizator Emocija by Filip (20% Digital)")
@@ -69,6 +86,7 @@ if st.button("Analiziraj unešeni tekst"):
 
     else:
         st.warning("Upišite neki tekst")
+
 
 
 
